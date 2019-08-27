@@ -20,8 +20,8 @@ module.exports = function (app) {
                 friendMatch = i;
             }
         }
-        var bff = friends[friendMatch];
-        res.json(bff);
+        var newBestFriend = friends[friendMatch];
+        res.json(newBestFriend);
         friends.push(req.body);
     });
 };
