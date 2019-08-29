@@ -6,7 +6,7 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
         var newFriendScores = req.body.scores;
         var friendsArray = [];
-        var friendCount = 0;
+        // var friendCount = 0;
         var friendMatch = 0;
         for (var i = 0; i < friends.length; i++) {
             var scoresDiff = 0;
